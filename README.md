@@ -1,2 +1,3 @@
 # Erdos-2025-Quant-Finance-Project
-Erdos Institute final project.
+## Rough Heston model
+I built a full rough Heston option-pricing pipeline in Python, including fast Monte Carlo with the Volterra-Euler scheme. The package provides call and put pricers, delta calculations, and `Numba`-accelerated parallelization that dramatically speeds up simulations, enabling calibration on real market data pulled with `yfinance`. I benchmarked the rough model against the classical Heston under identical path and step controls, comparing prices, implied-volatility surfaces, and convergence. The project includes clean plots, reproducible notebooks, and configurable simulators.
